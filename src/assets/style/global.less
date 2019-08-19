@@ -1,0 +1,93 @@
+// 分页
+.paginationStyle {
+  height: 40px;
+  padding-bottom: 16px;
+  .pagination {
+    border: 1px solid #ebebeb;
+    border-top: none;
+    height: 40px;
+    text-align: right;
+    background: #fff;
+    padding: 7px 12px;
+    box-sizing: border-box;
+    .el-pagination__total {
+      float: left;
+    }
+    .el-pagination__total,
+    .el-input__inner,
+    .el-pagination__jump {
+      color: #28292d;
+    }
+    .el-pager li.active {
+      color: #39c84a;
+    }
+  }
+}
+// 弹窗表单
+.formdialog {
+  .el-dialog__body {
+    padding: 20px 100px;
+  }
+}
+
+// 标题
+.titleBlue {
+  height: 36px;
+  line-height: 36px;
+  &::before {
+    width: 4px;
+    height: 16px;
+    background: #4484ff;
+    border-radius: 2px;
+    content: "";
+    display: block;
+    float: left;
+    margin: 10px 4px 0 0;
+  }
+}
+
+/* 页面切换动画 */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.28s;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all .5s;
+}
+
+.fade-transform-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+/* 面包屑动画 */
+.breadcrumb-enter-active,
+.breadcrumb-leave-active {
+  transition: all .5s;
+}
+
+.breadcrumb-enter,
+.breadcrumb-leave-active {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.breadcrumb-move {
+  transition: all .5s;
+}
+
+.breadcrumb-leave-active {
+  position: absolute;
+}
